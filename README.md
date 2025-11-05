@@ -38,11 +38,6 @@ topicos-2025-02-project-2/
 │   ├── datasets/                # Dataset de productos de ejemplo
 │   └── .env.example             # Variables de entorno template
 │
-├── templates/
-│   ├── fastapi-starter/         # Plantilla base FastAPI
-│   ├── nestjs-starter/          # Plantilla base NestJS
-│   └── react-starter/           # Plantilla base React
-│
 └── README.md                    # Este archivo
 ```
 
@@ -83,9 +78,8 @@ Este curso enseña a integrar **Large Language Models (LLMs)** en aplicaciones r
    - Cada carpeta `lectures/clase-XX/` contiene el material completo
    - Incluye teoría, ejemplos de código y tareas
 
-3. **Usa los ejemplos y templates:**
+3. **Usa los ejemplos:**
    - `examples/` tiene código de referencia
-   - `templates/` tiene proyectos base para empezar
 
 ## 📖 Cronograma del Curso
 
@@ -192,42 +186,6 @@ ollama --version  # opcional
 - [x] README con instrucciones de setup
 - [x] Video demo (≤3 min)
 - [x] Slides de presentación (≤10)
-
----
-
-## 🛠️ Guías de Setup
-
-### Opción 1: FastAPI + React
-
-**Backend:**
-```bash
-cd templates/fastapi-starter
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-cp ../.env.example .env   # Editar con tus API keys
-uvicorn app.main:app --reload
-```
-
-**Frontend:**
-```bash
-cd templates/react-starter
-npm install
-cp ../.env.example .env.local
-npm run dev
-```
-
-### Opción 2: NestJS + React
-
-**Backend:**
-```bash
-cd templates/nestjs-starter
-npm install
-cp ../.env.example .env
-npm run start:dev
-```
-
-**Frontend:** (igual que arriba)
 
 ---
 
